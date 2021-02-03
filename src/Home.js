@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 
 const Home = () => {  
-  const {data,isPending,error}=useFetch('http://localhost:8000/blogs')
+  const {data,isPending,error}=useFetch('https://elegant-snyder-80de28.netlify.app/blogs')
 
   
 
