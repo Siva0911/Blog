@@ -3,10 +3,10 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const { data: blog, error, isPending } = useFetch('https://elegant-snyder-80de28.netlify.app/blogs/' + id);
+  const { data: blog, error, isPending } = useFetch('http://localhost:3000/blogs/' + id);
   const history=useHistory();
   const handleClick=()=>{
-    fetch(' https://elegant-snyder-80de28.netlify.app/blogs/'+blog.id,{
+    fetch('http://localhost:3000blogs/'+blog.id,{
         method:'DELETE'
     }).then(()=>{
         history.push('/');
